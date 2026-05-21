@@ -7,6 +7,7 @@ def input_temperature(temp_str: str) -> int:
     else:
         return temp
 
+
 def test_temperature() -> None:
     print("=== Garden Temperature Checker ===")
     print("\n")
@@ -32,7 +33,7 @@ def test_temperature() -> None:
         print(f"Caught input_temperature error: {e}")
     else:
         print(f"Temperature is now {valid_str}°C")
-    
+
     print("\n")
     print(f"Input data is '{hot_val}'")
     try:
@@ -46,7 +47,7 @@ def test_temperature() -> None:
         input_temperature(cold_val)
     except ValueError as e:
         print(f"Caught input_temperature error: {e}")
-    
+
     print("\n")
     print("All tests completed - program didn't crash")
 
